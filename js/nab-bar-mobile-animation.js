@@ -61,3 +61,13 @@ const closeHamburger = document.querySelector('.close');
 let topPosition = (headerHeight - hamburger.clientHeight) / 2;
 hamburger.style.top = `${topPosition}px`;
 closeHamburger.style.top = `${topPosition}px`;
+
+window.addEventListener('resize', () => {
+  const headerHeight = document.querySelector('header.header').clientHeight;
+  const hamburger = document.querySelector('.hamburger');
+  const closeHamburger = document.querySelector('.close');
+
+  let topPosition = (headerHeight - hamburger.clientHeight) / 2;
+  hamburger.style.top = `${topPosition}px`;
+  closeHamburger.style.top = `${topPosition}px`;
+});
