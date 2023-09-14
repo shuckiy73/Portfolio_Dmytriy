@@ -34,6 +34,8 @@ header.header {
 
       a {
         text-decoration: none;
+        display: flex;
+        align-items: center;
         @include poppins();
 
         span {
@@ -105,8 +107,35 @@ header.header {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 992px) {
+
+  header.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .header-inner {
+    justify-content: end !important;
+  }
+
   .menu {
     display: none !important;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo a span {
+    font-size: 23px !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo a span {
+    font-size: 20px !important;
   }
 }
