@@ -6,10 +6,6 @@
     font-family: 'DM Sans', sans-serif !important;
 }
 
-:root {
-    --doc-height: 100vh;
-}
-
 *, *::after, *::before {
     box-sizing: border-box;
     padding: 0;
@@ -17,7 +13,6 @@
 
 body {
     margin: 0;
-    min-height: calc(100vh - var(--doc-height));
 }
 
 ::-webkit-scrollbar {
@@ -31,7 +26,7 @@ body {
 
 .info-about-me-wrapper {
     background-color: #171718;
-    min-height: calc(90vh - var(--doc-height));
+    min-height: 90vh;
     position: relative;
     z-index: 1;
     background-image: url('/images/abstract.png');
