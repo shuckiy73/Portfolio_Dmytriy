@@ -16,6 +16,9 @@ header.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   .header-inner {
     max-width: 1440px;
@@ -105,12 +108,6 @@ header.header {
 }
 
 @media (max-width: 992px) {
-  header.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
   .header-inner {
     justify-content: end !important;
   }

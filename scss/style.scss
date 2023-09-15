@@ -32,6 +32,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80vh;
+    min-height: 100vh;
+    height: 100%;
 
     .info-about-me-inner {
         max-width: 1440px;
@@ -41,7 +43,8 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 90vh;
+        min-height: 100vh;
+        height: 100%;
 
         .title {
 
@@ -212,10 +215,6 @@ body {
 }
 
 @media (max-width: 992px) {
-    .info-about-me-inner {
-        min-height: 100vh !important;
-    }
-
     .skills-wrapper, .contacts-wrapper {
         .inner {
             min-height: 100vh;
