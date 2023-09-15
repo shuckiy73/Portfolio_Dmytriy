@@ -180,6 +180,9 @@ body {
   .info-about-me-inner {
     min-height: 100vh !important;
   }
+  .skills-wrapper .inner, .contacts-wrapper .inner {
+    min-height: 100vh;
+  }
   .project .description {
     opacity: 1 !important;
   }

@@ -216,6 +216,12 @@ body {
         min-height: 100vh !important;
     }
 
+    .skills-wrapper, .contacts-wrapper {
+        .inner {
+            min-height: 100vh;
+        }
+    }
+
     .project {
         .description {
             opacity: 1 !important;
