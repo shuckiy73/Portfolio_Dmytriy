@@ -33,7 +33,6 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
-  scroll-behavior: smooth;
 }
 #paper-window.tilt {
   overflow: hidden;
