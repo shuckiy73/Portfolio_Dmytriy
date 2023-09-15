@@ -9,7 +9,7 @@ $primary-color: #5C62EC;
   left: 0;
   font-size: 33px;
   background-color: #171718;
-  
+
   nav {
     padding: 120px 34px;
 
@@ -35,11 +35,14 @@ $primary-color: #5C62EC;
 
 //prevents the scrolling when the menu is open
 #paper-window {
-  // height: 100vh;
   width: 100%;
   position: relative; 
   overflow: hidden;
   z-index: 2;
+
+  &.active {
+    height: 100vh !important;
+  }
   
   &.tilt {
     overflow: hidden;

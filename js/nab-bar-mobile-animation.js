@@ -1,5 +1,3 @@
-
-
 const headerHeight = document.querySelector('header.header').clientHeight;
 const hamburger = document.querySelector('.hamburger');
 const closeHamburger = document.querySelector('.close');
@@ -16,6 +14,14 @@ window.addEventListener('resize', () => {
   let topPosition = (headerHeight - hamburger.clientHeight) / 2;
   hamburger.style.top = `${topPosition}px`;
   closeHamburger.style.top = `${topPosition}px`;
+});
+
+hamburger.addEventListener('click', () => {
+  document.querySelector('#paper-window').classList.add('active');
+});
+
+closeHamburger.addEventListener('click', () => {
+  document.querySelector('#paper-window').classList.remove('active');
 });
 
 $(document).ready(function(topPosition) {
