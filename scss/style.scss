@@ -32,7 +32,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80vh;
-    min-height: 90vh;
 
     .info-about-me-inner {
         max-width: 1440px;
@@ -213,6 +212,10 @@ body {
 }
 
 @media (max-width: 992px) {
+    .info-about-me-inner {
+        min-height: 100vh !important;
+    }
+
     .project {
         .description {
             opacity: 1 !important;
