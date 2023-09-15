@@ -1,3 +1,7 @@
+:root {
+  --doc-height: 100%;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   padding: 0;
