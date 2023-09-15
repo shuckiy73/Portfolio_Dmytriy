@@ -1,5 +1,5 @@
 :root {
-  --doc-height: 100vh;
+  --doc-height: 90vh;
 }
 
 *, *::after, *::before {
@@ -23,7 +23,7 @@ body {
 
 .info-about-me-wrapper {
   background-color: #171718;
-  min-height: 90vh;
+  min-height: --doc-height;
   position: relative;
   z-index: 1;
   background-image: url("/images/abstract.png");
@@ -185,10 +185,10 @@ body {
 
 @media (max-width: 992px) {
   body {
-    min-height: var(--doc-height) !important;
+    height: var(--doc-height) !important;
   }
   .info-about-me-wrapper {
-    min-height: --doc-height !important;
+    height: var(--doc-height) !important;
   }
   .skills-wrapper .inner, .contacts-wrapper .inner {
     min-height: --doc-height !important;

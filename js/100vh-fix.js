@@ -1,5 +1,5 @@
 const documentHeight = () => {
-    const doc = document.documentElement;
+    const doc = (document.documentElement / 9) * 10;
     doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
 };
 
