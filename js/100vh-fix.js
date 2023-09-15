@@ -1,6 +1,7 @@
 const documentHeight = () => {
     const doc = document.documentElement;
-    doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+    const setHeight = window.innerHeight * (1 / 10);
+    doc.style.setProperty('--doc-height', `${window.innerHeight - setHeight}px`);
 };
 
 window.addEventListener('resize', documentHeight);
