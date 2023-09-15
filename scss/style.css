@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80vh;
-  min-height: 100vh;
+  min-height: 90vh;
   height: 100%;
 }
 .info-about-me-wrapper .info-about-me-inner {
@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 90vh;
   height: 100%;
 }
 .info-about-me-wrapper .info-about-me-inner .title h2 {
