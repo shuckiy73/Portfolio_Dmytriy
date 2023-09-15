@@ -16,13 +16,6 @@ window.addEventListener('resize', () => {
   closeHamburger.style.top = `${topPosition}px`;
 });
 
-hamburger.addEventListener('click', () => {
-  document.querySelector('#paper-window').classList.add('active');
-});
-
-closeHamburger.addEventListener('click', () => {
-  document.querySelector('#paper-window').classList.remove('active');
-});
 
 $(document).ready(function(topPosition) {
   var paperMenu = {

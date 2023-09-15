@@ -39,10 +39,6 @@ $primary-color: #5C62EC;
   position: relative; 
   overflow: hidden;
   z-index: 2;
-
-  &.active {
-    height: 100vh !important;
-  }
   
   &.tilt {
     overflow: hidden;
