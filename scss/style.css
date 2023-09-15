@@ -8,15 +8,6 @@ body {
   height: 100%;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #5C62EC;
-  border-radius: 20px;
-}
-
 .info-about-me-wrapper {
   background-color: #171718;
   position: relative;
