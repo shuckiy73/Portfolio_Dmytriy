@@ -1,25 +1,10 @@
-:root {
-  --doc-height: 100%;
-}
-
 *, *::after, *::before {
   box-sizing: border-box;
   padding: 0;
 }
 
-html {
-  overflow: auto;
-  min-height: 100vh;
-  height: var(--doc-height);
-  min-height: -webkit-fill-available;
-}
-
 body {
   margin: 0;
-  overflow: auto;
-  min-height: 100vh;
-  height: var(--doc-height);
-  min-height: -webkit-fill-available;
 }
 
 ::-webkit-scrollbar {
@@ -33,7 +18,6 @@ body {
 
 .info-about-me-wrapper {
   background-color: #171718;
-  min-height: 90vh;
   position: relative;
   z-index: 1;
   background-image: url("/images/abstract.png");
