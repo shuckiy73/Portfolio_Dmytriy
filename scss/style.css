@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  min-height: var(--doc-height);
 }
 
 ::-webkit-scrollbar {
@@ -183,6 +184,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  body {
+    min-height: var(--doc-height) !important;
+  }
   .info-about-me-wrapper {
     min-height: --doc-height !important;
   }
