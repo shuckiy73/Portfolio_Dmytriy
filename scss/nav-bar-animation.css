@@ -31,8 +31,7 @@
 #paper-window {
   width: 100%;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   z-index: 2;
   scroll-behavior: smooth;
 }
