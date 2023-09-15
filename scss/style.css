@@ -183,10 +183,6 @@ body {
 }
 
 @media (max-width: 992px) {
-  body {
-    margin: 0;
-    min-height: --doc-height !important;
-  }
   .info-about-me-wrapper {
     min-height: --doc-height !important;
   }
