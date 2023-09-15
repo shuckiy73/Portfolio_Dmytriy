@@ -81,6 +81,7 @@ body {
   margin: 0 auto;
   max-width: 1400px;
   width: 100%;
+  margin-bottom: 100px;
 }
 .projects-wrapper .title h1 {
   color: #5C62EC;
@@ -125,7 +126,7 @@ body {
   transform: translate(-50%, -50%);
   width: 80%;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   opacity: 0;
   transition: 0.4s ease-in;
 }
@@ -143,6 +144,7 @@ body {
   justify-content: center;
   min-height: 90vh;
   text-align: center;
+  padding: 15px;
 }
 .skills-wrapper .inner .title, .contacts-wrapper .inner .title {
   margin-bottom: 10px;
@@ -182,5 +184,21 @@ body {
   }
   .skills-wrapper .inner, .contacts-wrapper .inner {
     min-height: 100vh !important;
+  }
+  .project .description {
+    opacity: 1 !important;
+  }
+  .project img {
+    filter: brightness(60%) !important;
+  }
+}
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 576px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -18,3 +18,15 @@ footer.footer {
         }
     }
 }
+
+@media (max-width: 439px) {
+    .footer .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        a {
+            margin-bottom: 20px !important;
+        }
+    }
+}

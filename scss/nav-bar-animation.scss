@@ -36,6 +36,7 @@ $primary-color: #5C62EC;
   overflow-x: hidden;
   overflow-y: scroll;
   z-index: 2;
+  scroll-behavior: smooth;
   
   &.tilt {
     overflow: hidden;
