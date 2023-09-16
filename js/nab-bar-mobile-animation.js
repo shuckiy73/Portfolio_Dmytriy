@@ -16,6 +16,43 @@ window.addEventListener('resize', () => {
   closeHamburger.style.top = `${topPosition}px`;
 });
 
+hamburger.addEventListener('click', () => {
+  disableScroll();
+});
+
+closeHamburger.addEventListener('click', () => {
+  enableScroll();
+});
+
+const paperWindow = document.querySelector('#paper-window');
+
+window.addEventListener('click', (e) => {
+  const block = e.target.closest('#paper-window');
+
+  if(block){
+    if(paperWindow.classList.contains('tilt')){
+      disableScroll();
+      document.querySelector('html').style.scrollBehavior = 'auto';
+    } else {
+      enableScroll();
+      document.querySelector('html').style.scrollBehavior = 'smooth';
+    }
+  }
+});
+
+function disableScroll() {
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+  window.onscroll = function() {
+    window.scrollTo(scrollLeft, scrollTop);
+  };
+}
+
+function enableScroll() {
+   window.onscroll = function() {};
+}
 
 $(document).ready(function(topPosition) {
   var paperMenu = {

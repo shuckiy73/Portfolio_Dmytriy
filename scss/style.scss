@@ -20,15 +20,6 @@ body {
     height: 100%;
 }
 
-// ::-webkit-scrollbar {
-//     width: 8px;
-// }
-  
-// ::-webkit-scrollbar-thumb {
-//     background-color: #5C62EC;
-//     border-radius: 20px;
-// }
-
 .info-about-me-wrapper {
     background-color: #171718;
     position: relative;
@@ -38,6 +29,7 @@ body {
     background-position: center;
     background-size: 80vh;
     min-height: 100vh;
+    padding: 0 10px;
 
     .info-about-me-inner {
         max-width: 1440px;
